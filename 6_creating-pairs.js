@@ -1,11 +1,11 @@
 function createPairs(arr) {
     let ticks = 0;
     for (let i = 0; i < arr.length; i++) {
-        for(let j = i + 1; j < arr.length; j++) {
-            console.log(arr[i] + ", " +  arr[j] );
-            ticks++;
-        }
         ticks++;
+        for(let j = i + 1; j < arr.length; j++) {
+            ticks++;
+            console.log(arr[i] + ", " +  arr[j] );
+        }
     }
     return { ticks: ticks };
 }
