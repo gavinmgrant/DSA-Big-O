@@ -24,4 +24,4 @@ console.log(areYouHere([1, 2, 3, 4, 5, 6], [12, 13, 14, 15, 16, 17]));
 console.log(areYouHere([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]));
 
 // What is the Big O of the following algorithm? Explain your answer
-// Answer: The Big O is O(n^k), polynomial time, since the algorithm requires 2 levels of looping.
+// Answer: The Big O is O(n^2), polynomial time, since the algorithm requires 2 levels of looping.
