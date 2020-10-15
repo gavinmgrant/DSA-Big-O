@@ -40,4 +40,34 @@ const reverse = (input) => {
     return newArray.join('');;
 };
 
-console.log(reverse('testing'));
+// console.log(reverse('testing'));
+
+
+// 4. iterative function that calculates the nth triangular number that forms an equilateral triangle.
+// this is the Triangular Number Sequence: 1, 3, 6, 10, 15, 21, 28, 36, 45...
+
+const triangular = (num) => {
+    let sum = 0;
+    for (let i = 0; i <= num; i++) {
+        sum = sum + i;
+    }
+    return sum;
+};
+
+// console.log(triangular(5));
+
+
+// 5. iterative function that splits a string based on a separator (similar to String.prototype.split).
+
+const splitter = (input) => {
+    let array = Array.from(input);
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] != '/') {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray.join('');
+};
+
+console.log(splitter('02/20/2020'));
