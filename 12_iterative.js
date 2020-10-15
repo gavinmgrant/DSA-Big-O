@@ -91,18 +91,18 @@ const fibonacci = (num) => {
     return answer;
 };
 
-console.log('Fibonacci sequence: ' + fibonacci(6));
+// console.log('Fibonacci sequence: ' + fibonacci(6));
 
-// recursive function that finds the factorial of a given number.
+// 7. iterative function that finds the factorial of a given number.
 // the factorial of a number can be found by multiplying that number by each number between itself and 1.
 
 const factorial = (num) => {
-    if (num <= 1) {
-        return 1; 
-    } else {
-        let next = factorial(num - 1);
-        return num * next;
+    let result = 1;
+    for (let i = 1; i <= num; i++) {
+        result = result * i;
+        console.log(result);
     }
+    return result;
 };
 
-// console.log(factorial(5));
+console.log(factorial(7));
