@@ -70,4 +70,39 @@ const splitter = (input) => {
     return newArray.join('');
 };
 
-console.log(splitter('02/20/2020'));
+// console.log(splitter('02/20/2020'));
+
+
+// 6. iterative function that prints the Fibonacci sequence of a given number.
+
+const fibonacci = (num) => {
+    let a = 1;
+    let b = 0;
+    let temp = a;
+    let answer = [];
+
+    while (num >= 1) {
+        temp = a;
+        a = a + b;
+        b = temp;
+        answer.push(b);
+        num--;
+    }
+    return answer;
+};
+
+console.log('Fibonacci sequence: ' + fibonacci(6));
+
+// recursive function that finds the factorial of a given number.
+// the factorial of a number can be found by multiplying that number by each number between itself and 1.
+
+const factorial = (num) => {
+    if (num <= 1) {
+        return 1; 
+    } else {
+        let next = factorial(num - 1);
+        return num * next;
+    }
+};
+
+// console.log(factorial(5));
